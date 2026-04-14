@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number: Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Guessing The Number</h1>
+        <p>Can you beat the high score?</p>
+    </header>
+
+    <div class="controls">
+        <select id="difficulty">
+            <option value="easy">Easy (1-50)</option>
+            <option value="medium" selected>Medium (1-100)</option>
+            <option value="hard">Hard (1-200)</option>
+        </select>
+    </div>
+
+    <div class="stats">
+        <div class="stat-box">
+            <span class="stat-label">Attempts</span>
+            <span id="attemptsDisplay" class="stat-value">0</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Score</span>
+            <span id="scoreDisplay" class="stat-value">0</span>
+        </div>
+    </div>
+
+    <p id="instruction" class="instruction"></p>
+
+    <div class="input-group">
+        <input type="number" id="guessInput" placeholder="Enter number...">
+        <button id="submitBtn" class="btn primary">Guess</button>
+    </div>
+
+    <div class="action-buttons">
+        <button id="hintBtn" class="btn secondary">Get Hint</button>
+        <button id="restartBtn" class="btn outline hidden">Play Again</button>
+    </div>
+
+    <p id="feedback" class="feedback"></p>
+
+    <div class="leaderboard-section">
+        <h2>🏆 Top 5 Leaderboard</h2>
+        <ul id="leaderboardList"></ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
