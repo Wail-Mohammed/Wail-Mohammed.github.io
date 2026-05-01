@@ -11,7 +11,7 @@ Features:
 2- There is a dynamic scoring system. Points are calculated based on the remaining attempts and chosen difficulty.
 3- Hint system: If you are ever stuck or need help guessing (especially helpful in the hard difficulty level) then this can help you with guessing but it will also reduce your final score by 30%.
 4- Leadership board: This project uses a database to store best or highest records in an SQLite database. It will display the top 5 scores with player's inputted Initials.
-5- This project also has an offline fallback feature that saves into the browers local storage. (This is helpful when running the app without the database running in the backend.)
+5- This project use dark mode styling variables and also has an offline fallback feature that saves into the browers local storage. (This is helpful when running the app without the database running in the backend.)
 
 Tech Stack:
 Frontend: JS, HTML and CSS

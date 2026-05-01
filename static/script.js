@@ -110,8 +110,7 @@ function handleWin() {
     if (hintsUsed > 0) score = Math.floor(score * 0.7); // 30% penalty for using hints
 
     elements.score.textContent = score;
-    setFeedback(`🎉 Correct! You won ${score} points!`, "success");
-
+    setFeedback(`Correct! You won ${score} points!`, "success");
     endGame();
     saveScore();
 }

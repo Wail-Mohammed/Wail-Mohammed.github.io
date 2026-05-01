@@ -55,5 +55,5 @@ def save_score():
 
 if __name__ == '__main__':
     init_db()
-    print("🚀 Server running! Access it at: http://127.0.0.1:5000")
+    print("Server is running! Access it at: http://127.0.0.1:5000")
     app.run(port=5000, debug=True)
